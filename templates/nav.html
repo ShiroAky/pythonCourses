@@ -1,1 +1,20 @@
-<h1>Hola mundo</h1>
+<nav class="nav" id="nav">
+
+    <!-- Logo -->
+    <div class="nav__logo">
+        <a href="{{ url_for('index') }}">
+            <span>Mega Gallery</span>
+        </a>
+    </div>
+
+    <!-- Menu -->
+    <div class="nav__search">
+        <form method="GET">
+            <input type="text" name="search" placeholder="Buscar imagen">
+            <button type="submit">
+                <i class="icon ion-md-search"></i>
+            </button>
+        </form>
+    </div>
+
+</nav>

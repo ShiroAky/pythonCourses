@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/png">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
 
-    {% include 'nav.html'   %}
+    <!-- Loader -->
+    {% include 'loader.html' %}
+
+    <!-- Navbar -->
+    {% include 'nav.html' %}
+
+    <!-- Main content -->
+    {% include 'grid.html' %}
     
+    <!-- Scripts -->
     <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>
 
 </body>
