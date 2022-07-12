@@ -1,4 +1,6 @@
 # Modules:
+from asyncio import transports
+from mimetypes import init
 from flask import Flask, render_template
 
 # Create a Flask application:
@@ -9,4 +11,4 @@ def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run('localhost', 3000, debug=True)
+    app.run('192.168.0.3', 3000, debug=False)
