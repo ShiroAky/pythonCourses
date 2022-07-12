@@ -70,15 +70,6 @@ body {
   background-color: #0c0813;
 }
 
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .nav {
   width: 100%;
   background-color: #06030a;
